@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11709.299 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{35C959A0-8015-48FF-873A-2EE094830AB7}"
 EndProject
@@ -17,9 +17,6 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7FB3DEE3-4601-437C-AA33-A113CE7F8A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,6 +35,9 @@ Global
 		{5740131B-DDDA-4A48-A7FD-34B48BD39804}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5740131B-DDDA-4A48-A7FD-34B48BD39804}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5740131B-DDDA-4A48-A7FD-34B48BD39804}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7FB3DEE3-4601-437C-AA33-A113CE7F8A2B} = {35C959A0-8015-48FF-873A-2EE094830AB7}
