@@ -15,6 +15,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
+// HealtCheck Base de la Api
+app.MapGet("/ping", () => "pong");
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
