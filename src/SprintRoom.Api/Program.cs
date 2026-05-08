@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using SprintRoom.Infrastructure.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,8 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configure connection string and database context
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
 var app = builder.Build();
 
+// HealtCheck Base de la Api
 app.MapGet("/ping", () => "pong");
 
 // Configure the HTTP request pipeline.
